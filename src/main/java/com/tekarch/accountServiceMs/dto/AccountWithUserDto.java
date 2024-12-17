@@ -19,8 +19,8 @@ public class AccountWithUserDto {
     private String currency;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private String userName;  // Field to hold username from UserDto
+    private String userName;
 
-    // Getters and Setters
+
 }
 

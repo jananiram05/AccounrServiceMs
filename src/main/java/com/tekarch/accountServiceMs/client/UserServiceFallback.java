@@ -12,8 +12,8 @@ public class UserServiceFallback implements UserServiceClient {
         // You can also return a custom message if User Service is unavailable
         UserDto fallbackUser = new UserDto();
         fallbackUser.setUserId(userId);
-        fallbackUser.setUsername("Unknown User");
-        fallbackUser.setEmail("unknown@domain.com");
+        fallbackUser.setUsername("Janani ");
+        fallbackUser.setEmail("Janani@gmail.com");
 
         return fallbackUser;
     }

@@ -122,10 +122,7 @@ public class AccountServiceImpl implements AccountService {
         return accountRepository.findAll();
     }
 
-  /*  @Override
-    public List<Account> getUserAccounts(Long userId) {
-        return accountRepository.findByUserId(userId);
-    }*/
+
 
     @Override
     public Account getAccountById(Long accountId) {
@@ -154,17 +151,10 @@ public class AccountServiceImpl implements AccountService {
         return account.getBalance();
     }
 
-    // Get accounts by user ID and account type
-
-    /* @Override
-     public List<Account> getAccountsByType(Long userId, String accountType) {
-         return accountRepository.findByUser_UserIdAndAccountType(userId,accountType);
-     }*/
-    // Example of transaction limits; you can replace this with actual logic
     public TransactionLimitsDTO getTransactionLimits(Long accountId) {
-        double dailyLimitRemaining = 5000.0;   // Example valuet
-        double weeklyLimitRemaining = 20000.0; // Example value
-        double monthlyLimitRemaining = 50000.0; // Example value
+        double dailyLimitRemaining = 5000.0;
+        double weeklyLimitRemaining = 20000.0;
+        double monthlyLimitRemaining = 50000.0;
 
         // If the transaction limits are null or invalid, throw an exception
         if (dailyLimitRemaining == 0.0 && weeklyLimitRemaining == 0.0 && monthlyLimitRemaining == 0.0) {
