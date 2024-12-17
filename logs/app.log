@@ -1244,3 +1244,1579 @@ Identify and stop the process that's listening on port 8082 or configure this ap
         accounts a1_0 
     where
         a1_0.user_id=?
+2024-12-16 22:18:36 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2024-12-16 22:18:36 [Thread-1] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-16 22:18:36 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:18:39 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-16 22:18:39 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:18:39 [Thread-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 22:18:39 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-16 22:18:39 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-16 22:18:42 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 4620 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-16 22:18:42 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-16 22:18:45 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-16 22:18:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16 22:18:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+2024-12-16 22:18:46 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=b9fd30fb-1f96-3eac-96d6-89ebbca5f37b
+2024-12-16 22:18:47 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-16 22:18:47 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:18:47 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-16 22:18:47 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-16 22:18:47 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-16 22:18:47 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4993 ms
+2024-12-16 22:18:48 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16 22:18:48 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-16 22:18:48 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16 22:18:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-12-16 22:18:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29ba8f9a
+2024-12-16 22:18:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-12-16 22:18:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-16 22:18:48 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16 22:18:48 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16 22:18:48 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 22:18:48 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.tekarch.accountServiceMs.services.AccountServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-16 22:18:48 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 22:18:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-12-16 22:18:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-12-16 22:18:48 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-16 22:18:48 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-16 22:18:49 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tekarch.accountServiceMs.controller.AccountController required a bean of type 'com.tekarch.accountServiceMs.services.AccountServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.tekarch.accountServiceMs.services.AccountServiceImpl' in your configuration.
+
+2024-12-16 22:18:52 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 4620 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-16 22:18:52 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-16 22:18:52 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-16 22:18:52 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-16 22:18:53 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:18:53 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-16 22:18:53 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-16 22:18:53 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1062 ms
+2024-12-16 22:18:53 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16 22:18:53 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16 22:18:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-12-16 22:18:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71e62009
+2024-12-16 22:18:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-12-16 22:18:53 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-16 22:18:53 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16 22:18:53 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 35204 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-16 22:18:53 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-16 22:18:53 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-16 22:18:53 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-16 22:18:54 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-16 22:18:54 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-16 22:18:54 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-16 22:18:56 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-16 22:18:57 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-16 22:18:57 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:18:57 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-16 22:18:57 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16 22:18:57 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2024-12-16 22:18:58 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-16 22:18:58 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-16 22:18:58 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 8.34 seconds (process running for 14524.392)
+2024-12-16 22:18:58 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-16 22:18:59 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-16 22:18:59 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:18:59 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-16 22:18:59 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-16 22:18:59 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-16 22:18:59 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5842 ms
+2024-12-16 22:19:00 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16 22:19:00 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-16 22:19:00 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-16 22:19:01 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16 22:19:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-16 22:19:01 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77f316ff
+2024-12-16 22:19:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-16 22:19:02 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-16 22:19:02 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16 22:19:05 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16 22:19:05 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 22:19:06 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-16 22:19:07 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-16 22:19:07 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-12-16 22:19:09 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-16 22:19:10 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-16 22:19:10 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-12-16 22:19:10 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 22:19:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-16 22:19:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-16 22:19:10 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-16 22:19:10 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2024-12-17 01:22:21 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=3h27s615ms526µs900ns).
+2024-12-17 06:47:30 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=5h25m20s497ms159µs).
+2024-12-17 06:51:38 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-12-17 06:51:38 [Thread-16] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-17 06:51:38 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:51:40 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-17 06:51:40 [Thread-16] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:51:40 [Thread-16] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 06:51:40 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-12-17 06:51:40 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-12-17 06:51:42 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 4620 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 06:51:42 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 06:51:42 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 06:51:43 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 06:51:43 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2024-12-17 06:51:43 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 06:51:43 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 06:51:43 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:51:43 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 06:51:43 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 06:51:43 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 06:51:43 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1627 ms
+2024-12-17 06:51:43 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 06:51:43 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 06:51:43 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 06:51:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-12-17 06:51:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7747e787
+2024-12-17 06:51:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-12-17 06:51:43 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 06:51:43 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 06:51:44 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 06:51:44 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 06:51:44 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 06:51:44 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 06:51:44 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 06:51:46 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 06:51:46 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:51:46 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 06:51:47 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 06:51:47 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 7.487 seconds (process running for 45304.832)
+2024-12-17 06:51:47 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-17 06:51:49 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 5364 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 06:51:49 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 06:51:49 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 06:51:49 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 06:51:51 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 06:51:52 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 06:51:52 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 262 ms. Found 1 JPA repository interface.
+2024-12-17 06:51:53 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 06:51:55 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 06:51:55 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:51:55 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 06:51:55 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 06:51:55 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 06:51:55 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5733 ms
+2024-12-17 06:51:55 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 06:51:56 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 06:51:56 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 06:51:57 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 06:51:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 06:51:57 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4008f126
+2024-12-17 06:51:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 06:51:57 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 06:51:57 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 06:52:00 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 06:52:00 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 06:52:01 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 06:52:01 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 06:52:01 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-12-17 06:52:04 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 06:52:04 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:52:04 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-12-17 06:52:04 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 06:52:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-17 06:52:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-17 06:52:04 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-17 06:52:04 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2024-12-17 06:52:43 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 26916 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 06:52:43 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 06:52:43 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 06:52:43 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 06:52:44 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 06:52:44 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 06:52:44 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-12-17 06:52:44 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 06:52:45 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 06:52:45 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:52:45 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 06:52:45 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 06:52:45 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 06:52:45 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2558 ms
+2024-12-17 06:52:46 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 06:52:46 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 06:52:46 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 06:52:47 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 06:52:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 06:52:47 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32dbed23
+2024-12-17 06:52:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 06:52:47 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 06:52:47 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 06:52:48 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 06:52:48 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 06:52:49 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 06:52:49 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 06:52:49 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 06:52:51 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 06:52:51 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 06:52:51 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 06:52:52 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 06:52:52 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 12.631 seconds (process running for 16.179)
+2024-12-17 06:54:43 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 06:54:43 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 06:54:43 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-12-17 06:54:44 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.tekarch.accountServiceMs.model.Account */insert 
+    into
+        accounts (account_number, account_type, balance, created_at, currency, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17 06:54:44 [http-nio-8082-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2024-12-17 06:54:44 [http-nio-8082-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry '711378990' for key 'accounts.account_number'
+2024-12-17 06:54:44 [http-nio-8082-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '711378990' for key 'accounts.account_number'] [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; SQL [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; constraint [accounts.account_number]]
+2024-12-17 06:54:53 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.tekarch.accountServiceMs.model.Account */insert 
+    into
+        accounts (account_number, account_type, balance, created_at, currency, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17 07:04:17 [http-nio-8082-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource accounts/1/1.]
+2024-12-17 07:05:54 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.tekarch.accountServiceMs.model.Account */insert 
+    into
+        accounts (account_number, account_type, balance, created_at, currency, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17 07:05:54 [http-nio-8082-exec-8] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2024-12-17 07:05:54 [http-nio-8082-exec-8] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry '23789' for key 'accounts.account_number'
+2024-12-17 07:05:54 [http-nio-8082-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '23789' for key 'accounts.account_number'] [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; SQL [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; constraint [accounts.account_number]]
+2024-12-17 07:06:46 [http-nio-8082-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource accounts/1/1.]
+2024-12-17 07:13:34 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.user_id is null
+2024-12-17 07:14:43 [http-nio-8082-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource accounts/all.]
+2024-12-17 07:14:51 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.user_id is null
+2024-12-17 07:15:02 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.tekarch.accountServiceMs.model.Account */insert 
+    into
+        accounts (account_number, account_type, balance, created_at, currency, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17 07:15:02 [http-nio-8082-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2024-12-17 07:15:02 [http-nio-8082-exec-7] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry '23789' for key 'accounts.account_number'
+2024-12-17 07:15:02 [http-nio-8082-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '23789' for key 'accounts.account_number'] [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; SQL [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; constraint [accounts.account_number]]
+2024-12-17 07:20:03 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 28400 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 07:20:03 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 07:20:03 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 07:20:03 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 07:20:04 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 07:20:04 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 07:20:04 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2024-12-17 07:20:04 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 07:20:05 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 07:20:05 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 07:20:05 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 07:20:05 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 07:20:05 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 07:20:05 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2571 ms
+2024-12-17 07:20:06 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 07:20:06 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 07:20:06 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 07:20:06 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 07:20:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 07:20:07 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@189d4c09
+2024-12-17 07:20:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 07:20:07 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 07:20:07 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 07:20:08 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 07:20:08 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 07:20:09 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 07:20:09 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 07:20:09 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 07:20:11 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 07:20:11 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 07:20:11 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 07:20:13 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 07:20:13 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 12.976 seconds (process running for 19.5)
+2024-12-17 07:20:20 [http-nio-8082-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 07:20:20 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 07:20:20 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-17 07:20:20 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.tekarch.accountServiceMs.model.Account */insert 
+    into
+        accounts (account_number, account_type, balance, created_at, currency, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17 07:20:21 [http-nio-8082-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2024-12-17 07:20:21 [http-nio-8082-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry '23789' for key 'accounts.account_number'
+2024-12-17 07:20:21 [http-nio-8082-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '23789' for key 'accounts.account_number'] [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; SQL [/* insert for com.tekarch.accountServiceMs.model.Account */insert into accounts (account_number,account_type,balance,created_at,currency,updated_at,user_id) values (?,?,?,?,?,?,?)]; constraint [accounts.account_number]]
+2024-12-17 07:20:31 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 07:26:37 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 36508 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 07:26:37 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 07:26:37 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 07:26:37 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 07:26:38 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 07:26:38 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 07:26:38 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2024-12-17 07:26:39 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 07:26:39 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 07:26:39 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 07:26:39 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 07:26:39 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 07:26:39 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 07:26:39 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2386 ms
+2024-12-17 07:26:40 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 07:26:40 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 07:26:40 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 07:26:40 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 07:26:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 07:26:40 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f69c109
+2024-12-17 07:26:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 07:26:40 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 07:26:41 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 07:26:42 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 07:26:42 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 07:26:42 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 07:26:42 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 07:26:42 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 07:26:45 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 07:26:45 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 07:26:45 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 07:26:46 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 07:26:46 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 10.967 seconds (process running for 12.012)
+2024-12-17 07:27:04 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 07:27:04 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 07:27:04 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-17 07:27:04 [http-nio-8082-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource account/accounts/12345678990.]
+2024-12-17 07:27:33 [http-nio-8082-exec-4] INFO  com.tekarch.accountServiceMs.controller.AccountController - Request received to fetch account for account_number=12345678990
+2024-12-17 07:27:33 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+2024-12-17 07:27:33 [http-nio-8082-exec-4] WARN  com.tekarch.accountServiceMs.controller.AccountController - Account not found for account_number=12345678990
+2024-12-17 07:27:44 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 07:27:57 [http-nio-8082-exec-6] INFO  com.tekarch.accountServiceMs.controller.AccountController - Request received to fetch account for account_number=23789
+2024-12-17 07:27:57 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+2024-12-17 07:29:53 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 07:29:53 [http-nio-8082-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Account not found]
+2024-12-17 08:17:47 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m5s631ms437µs100ns).
+2024-12-17 08:55:04 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 08:59:12 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:21:22 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:33:40 [http-nio-8082-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource accounts/account1.]
+2024-12-17 09:36:23 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:36:23 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:38:12 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:38:12 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:39:18 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:39:18 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:40:43 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:40:44 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:47:36 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:47:36 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:54:48 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 09:55:51 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:55:51 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 09:56:08 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 11:02:35 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m16s529ms602µs900ns).
+2024-12-17 11:18:13 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 4572 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 11:18:13 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 11:18:13 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 11:18:13 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 11:18:14 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 11:18:14 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 11:18:15 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2024-12-17 11:18:15 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 11:18:16 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 11:18:16 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 11:18:16 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 11:18:16 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 11:18:16 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 11:18:16 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3618 ms
+2024-12-17 11:18:17 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 11:18:17 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 11:18:17 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 11:18:18 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 11:18:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 11:18:18 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bbb8273
+2024-12-17 11:18:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 11:18:18 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 11:18:19 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 11:18:20 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 11:18:20 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 11:18:21 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 11:18:21 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 11:18:21 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 11:18:24 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 11:18:24 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 11:18:24 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 11:18:25 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 11:18:25 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 14.218 seconds (process running for 17.07)
+2024-12-17 11:20:31 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 11:20:31 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 11:20:31 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-17 11:20:31 [http-nio-8082-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-17 11:20:38 [http-nio-8082-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.math.BigDecimal` from Object value (token `JsonToken.START_OBJECT`)]
+2024-12-17 11:24:57 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 21360 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 11:24:57 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 11:24:57 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 11:24:57 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 11:24:58 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 11:24:58 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 11:24:58 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-12-17 11:24:59 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 11:24:59 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 11:25:00 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 11:25:00 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 11:25:00 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 11:25:00 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 11:25:00 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2644 ms
+2024-12-17 11:25:00 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 11:25:00 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 11:25:00 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 11:25:01 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 11:25:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 11:25:01 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bbb8273
+2024-12-17 11:25:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 11:25:01 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 11:25:01 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 11:25:03 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 11:25:03 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 11:25:04 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 11:25:04 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 11:25:04 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 11:25:06 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 11:25:06 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 11:25:06 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 11:25:08 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 11:25:08 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 12.56 seconds (process running for 13.697)
+2024-12-17 11:25:21 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 11:25:21 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 11:25:21 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-17 11:25:21 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 11:25:21 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 11:25:21 [http-nio-8082-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource accounts/1/accounts/1/withdraw.]
+2024-12-17 11:31:32 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 20916 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 11:31:32 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 11:31:32 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 11:31:32 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 11:31:33 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 11:31:34 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 11:31:34 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2024-12-17 11:31:34 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 11:31:36 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 11:31:36 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 11:31:36 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 11:31:36 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 11:31:36 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 11:31:36 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3667 ms
+2024-12-17 11:31:36 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 11:31:36 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 11:31:36 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 11:31:37 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 11:31:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 11:31:37 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bc9f805
+2024-12-17 11:31:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 11:31:38 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 11:31:38 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 11:31:39 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 11:31:39 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 11:31:40 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 11:31:40 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 11:31:40 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 11:31:42 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 11:31:42 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 11:31:42 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 11:31:44 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 11:31:44 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 13.636 seconds (process running for 14.889)
+2024-12-17 11:32:00 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 11:32:00 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 11:32:00 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-17 11:32:00 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 11:32:00 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 11:32:26 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 11:33:37 [http-nio-8082-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-17 11:33:44 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 11:33:44 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 11:33:53 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 11:59:55 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 11:59:55 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 11:59:55 [http-nio-8082-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.tekarch.accountServiceMs.dto.WithdrawalDepositRequest` (although at least one Creator exists): no double/Double-argument constructor/factory method to deserialize from Number value (500.0)]
+2024-12-17 12:09:33 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:09:33 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:09:33 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:09:33 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:14:06 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:06 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:06 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:24 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:24 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:24 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:24 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:14:24 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:14:24 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:15:10 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 12:15:35 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:15:35 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:15:40 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 12:15:55 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:15:55 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:15:55 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:15:55 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:15:55 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:15:55 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:16:03 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 12:16:44 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:16:44 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:16:44 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:16:44 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:16:44 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_id=?
+2024-12-17 12:16:44 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.tekarch.accountServiceMs.model.Account */update accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        created_at=?,
+        currency=?,
+        updated_at=?,
+        user_id=? 
+    where
+        account_id=?
+2024-12-17 12:16:53 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0
+2024-12-17 12:32:21 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 19504 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 12:32:21 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 12:32:21 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 12:32:21 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 12:32:22 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 12:32:23 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 12:32:23 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2024-12-17 12:32:23 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=33bb6c8e-8bbe-3ef8-afe5-c2aab8802a9d
+2024-12-17 12:32:24 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 12:32:25 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 12:32:25 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 12:32:25 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 12:32:25 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 12:32:25 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3509 ms
+2024-12-17 12:32:25 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 12:32:25 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 12:32:25 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 12:32:27 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 12:32:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 12:32:28 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66816c83
+2024-12-17 12:32:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 12:32:28 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 12:32:28 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 12:32:29 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 12:32:29 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 12:32:30 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 12:32:30 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 12:32:30 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 12:32:33 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 12:32:33 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 12:32:33 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 12:32:34 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 12:32:34 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 15.347 seconds (process running for 16.909)
+2024-12-17 12:32:57 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 12:32:57 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 12:32:57 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-17 14:13:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m48s376ms433µs).
+2024-12-17 14:18:43 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Starting AccounrServiceMsApplication using Java 17.0.11 with PID 20632 (C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main started by agmarc80 in C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs)
+2024-12-17 14:18:43 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-17 14:18:44 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17 14:18:44 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17 14:18:45 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\agmarc80\IdeaProjects\TekDevProjects\AccounrServiceMs\build\classes\java\main\com\tekarch\accountServiceMs\client\UserServiceClient.class]
+2024-12-17 14:18:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17 14:18:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 252 ms. Found 1 JPA repository interface.
+2024-12-17 14:18:47 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=2e3e0fda-1f4f-3432-91cf-1115c8c377cd
+2024-12-17 14:18:48 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-17 14:18:49 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-12-17 14:18:49 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-17 14:18:49 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17 14:18:49 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-17 14:18:49 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5241 ms
+2024-12-17 14:18:49 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17 14:18:50 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17 14:18:50 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-17 14:18:51 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17 14:18:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-17 14:18:51 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ad7fd18
+2024-12-17 14:18:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-17 14:18:51 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-17 14:18:51 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.28
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17 14:18:54 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17 14:18:54 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17 14:18:55 [restartedMain] DEBUG org.springframework.cloud.openfeign.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2024-12-17 14:18:55 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17 14:18:56 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-17 14:18:58 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 14:18:58 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-12-17 14:18:58 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2024-12-17 14:19:00 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-12-17 14:19:00 [restartedMain] INFO  com.tekarch.accountServiceMs.AccounrServiceMsApplication - Started AccounrServiceMsApplication in 19.793 seconds (process running for 23.035)
+2024-12-17 14:19:11 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-17 14:19:11 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-17 14:19:11 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-17 14:19:11 [http-nio-8082-exec-1] INFO  com.tekarch.accountServiceMs.controller.AccountController - Request received to fetch account for account_number=23789
+2024-12-17 14:19:12 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+2024-12-17 14:19:19 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        a1_0.account_id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        accounts a1_0

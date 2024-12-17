@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface AccountService {
 
-    // Methods for managing accounts
+   /* // Methods for managing accounts
     Account createAccount(Account account);
     Account updateAccount(Account account);
     List<Account> getAllAccounts();
@@ -22,7 +22,22 @@ public interface AccountService {
    List<AccountWithUserDto> getUserAccounts(Long userId);
     boolean validateAccount(Long accountId, Long userId);
 
-    TransactionLimitsDTO getTransactionLimits(Long accountId);
+    TransactionLimitsDTO getTransactionLimits(Long accountId);*/
+
+    Account createAccount(Account account);
+    Account updateAccount(Account account);
+    Account getAccountById(Long accountId);
+    List<Account> getAccountsByUserId(Long userId);
+    void deleteAccountById(Long accountId);
+    List<Account> getAllAccounts();
+
+
+    void withdraw(Long accountId, BigDecimal amount);
+
+    // Method to deposit funds into an account
+    void deposit(Long accountId, BigDecimal amount);
+
+    BigDecimal getTransactionLimit(Long accountId);
 
 
 }
